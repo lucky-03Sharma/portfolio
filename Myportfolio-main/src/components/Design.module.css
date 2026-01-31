@@ -1,0 +1,97 @@
+.design {
+    min-height: 100vh;
+    padding: var(--space-3xl) 0;
+    background: var(--bg-primary);
+}
+
+.sectionHeader {
+    text-align: center;
+    margin-bottom: var(--space-3xl);
+}
+
+.sectionHeader h2 {
+    margin-bottom: var(--space-md);
+}
+
+.sectionHeader p {
+    font-size: 1.125rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.designCarousel {
+    position: relative;
+    overflow: hidden;
+    padding: var(--space-xl) 0;
+}
+
+.designTrack {
+    display: flex;
+    gap: var(--space-lg);
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    padding-bottom: var(--space-md);
+    scrollbar-width: thin;
+    scrollbar-color: var(--accent-blue) var(--bg-tertiary);
+}
+
+.designTrack::-webkit-scrollbar {
+    height: 8px;
+}
+
+.designTrack::-webkit-scrollbar-track {
+    background: var(--bg-tertiary);
+    border-radius: 4px;
+}
+
+.designTrack::-webkit-scrollbar-thumb {
+    background: var(--accent-blue);
+    border-radius: 4px;
+}
+
+.designItem {
+    flex: 0 0 500px;
+    scroll-snap-align: start;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: all var(--transition-base);
+}
+
+.designItem:hover {
+    transform: scale(1.02);
+    box-shadow: var(--glow-sm);
+}
+
+.designImage {
+    width: 100%;
+    height: 300px;
+    background: linear-gradient(135deg, var(--bg-tertiary), var(--bg-secondary));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.designPlaceholder {
+    font-size: 6rem;
+    opacity: 0.3;
+}
+
+.designInfo {
+    padding: var(--space-lg);
+}
+
+.designInfo h4 {
+    margin-bottom: var(--space-sm);
+}
+
+.designInfo p {
+    font-size: 0.875rem;
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .designItem {
+        flex: 0 0 90%;
+    }
+}
