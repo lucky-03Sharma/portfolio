@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Lucky Sharma – Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <!-- Floating elements -->
+    <div class="floating-element floating1"></div>
+    <div class="floating-element floating2"></div>
+    <div class="floating-element floating3"></div>
+
+    <div class="container">
+      <div class="hero-wrapper">
+        <div class="hero-image-content">
+          <div class="image-wrapper">
+            <img
+              src="public/profile.jpg"
+              alt="Lucky Sharma"
+              class="profile-image"
+            />
+          </div>
+        </div>
+
+        <div class="hero-text-content">
+          <h1 class="hero-title">
+            Hi, I'm <span class="gradient-text">Lucky Sharma</span>
+          </h1>
+          <p class="hero-subtitle">
+            A passionate Full Stack Developer building modern web applications with clean UI,
+            robust backend systems, and performance-driven design.
+          </p>
+          <div class="hero-cta">
+            <button class="btn-primary" data-scroll="#projects">
+              View Projects <span>→</span>
+            </button>
+            <button class="btn-secondary" data-scroll="#contact">
+              Contact Me
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- EC2 experiment text -->
+    <div class="experiment-text">
+      exp.3 EC2<br />
+      lucky sharma 231P061
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about reveal" id="about">
+    <div class="container">
+      <div class="about-content">
+        <div class="about-text">
+          <h2>About Me</h2>
+          <p>
+            I'm a Computer Engineering student with a deep love for creating digital experiences that matter.
+            My journey in tech has been driven by curiosity and a desire to build solutions that are both
+            beautiful and functional.
+          </p>
+
+          <h3 class="about-subheading">Experience &amp; Internships</h3>
+          <ul class="about-list">
+            <li>
+              <strong>Ethnus - Assessment &amp; Training</strong>
+              <span class="muted">(Apr 2025 - Jul 2025)</span><br />
+              Soft Skills Training: Communication, teamwork &amp; confidence building.
+            </li>
+            <li>
+              <strong>Cyberen Technologies - R&amp;D Intern</strong>
+              <span class="muted">(Jul 2025)</span><br />
+              Worked on cost-effective analysis tools and research evaluation in the research and development department.
+            </li>
+            <li>
+              <strong>Digital Forensic Team - Intern</strong><br />
+              Cyber Security &amp; Forensics Training: Evidence collection, investigation &amp; cyber protection.
+            </li>
+          </ul>
+
+          <h3 class="about-subheading">Courses &amp; Certifications</h3>
+          <ul class="about-list">
+            <li>Cybersecurity &amp; Ethical Hacking</li>
+            <li>Coursera – Frontend Development (HTML, CSS, Bootstrap &amp; JavaScript)</li>
+            <li>Python Development</li>
+            <li>Full Stack Development in MERN</li>
+            <li>NPTEL – Python for Data Science</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="skills reveal" id="skills">
+    <div class="container">
+      <div class="section-header">
+        <h2>Skills &amp; <span class="gradient-text">Tech Stack</span></h2>
+        <p>Technologies and tools I use to bring ideas to life</p>
+      </div>
+
+      <div class="skills-grid">
+        <div class="skill-card glass">
+          <span class="skill-icon">💻</span>
+          <h3>Frontend Development</h3>
+          <p>Building responsive web pages with clean code.</p>
+          <div class="tech-list">
+            <span class="tech-tag">HTML5</span>
+            <span class="tech-tag">CSS3</span>
+            <span class="tech-tag">JavaScript</span>
+            <span class="tech-tag">React</span>
+            <span class="tech-tag">Bootstrap</span>
+          </div>
+        </div>
+
+        <div class="skill-card glass">
+          <span class="skill-icon">⚙️</span>
+          <h3>Backend Development</h3>
+          <p>Creating robust server-side applications and APIs.</p>
+          <div class="tech-list">
+            <span class="tech-tag">Node.js</span>
+            <span class="tech-tag">Express.js</span>
+            <span class="tech-tag">REST APIs</span>
+          </div>
+        </div>
+
+        <div class="skill-card glass">
+          <span class="skill-icon">🗄️</span>
+          <h3>Database &amp; Tools</h3>
+          <p>Managing data and version control efficiently.</p>
+          <div class="tech-list">
+            <span class="tech-tag">MongoDB</span>
+            <span class="tech-tag">Git</span>
+            <span class="tech-tag">GitHub</span>
+            <span class="tech-tag">VS Code</span>
+          </div>
+        </div>
+
+        <div class="skill-card glass">
+          <span class="skill-icon">🐍</span>
+          <h3>Programming Languages</h3>
+          <p>Core programming logic and automation.</p>
+          <div class="tech-list">
+            <span class="tech-tag">Python</span>
+            <span class="tech-tag">JavaScript</span>
+            <span class="tech-tag">C</span>
+            <span class="tech-tag">C++</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="projects reveal" id="projects">
+    <div class="container">
+      <div class="section-header">
+        <h2>Featured <span class="gradient-text">Projects</span></h2>
+        <p>A showcase of my web development work</p>
+      </div>
+
+      <div class="projects-grid">
+        <div class="project-card glass" data-project="quizburst">
+          <div class="project-image">
+            <div class="project-placeholder">💻</div>
+          </div>
+          <div class="project-overlay">
+            <span class="project-category">Web App</span>
+            <h3>QuizBurst</h3>
+            <p>
+              An online quiz application with certification and a
+              user-friendly environment.
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag">MERN Stack</span>
+              <span class="tech-tag">React</span>
+              <span class="tech-tag">Node.js</span>
+              <span class="tech-tag">MongoDB</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card glass" data-project="airbnb">
+          <div class="project-image">
+            <div class="project-placeholder">💻</div>
+          </div>
+          <div class="project-overlay">
+            <span class="project-category">Web App</span>
+            <h3>Airbnb Clone</h3>
+            <p>
+              Full-stack booking platform with property listings,
+              authentication &amp; search features.
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag">React</span>
+              <span class="tech-tag">Node.js</span>
+              <span class="tech-tag">Vercel</span>
+              <span class="tech-tag">MongoDB</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Project Modal -->
+    <div class="modal" id="project-modal">
+      <div class="modal-content glass-strong">
+        <button class="modal-close" id="modal-close">&times;</button>
+        <span class="project-category" id="modal-category"></span>
+        <h2 id="modal-title"></h2>
+        <p class="modal-full-description" id="modal-description"></p>
+
+        <h3 class="modal-heading">Key Features</h3>
+        <ul class="modal-features" id="modal-features"></ul>
+
+        <h3 class="modal-heading">Challenges &amp; Solutions</h3>
+        <p id="modal-challenges"></p>
+
+        <h3 class="modal-heading">Outcome</h3>
+        <p id="modal-outcome"></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCESS -->
+  <section class="process reveal" id="process">
+    <div class="container">
+      <div class="section-header">
+        <h2>Development <span class="gradient-text">Process</span></h2>
+        <p>How I transform ideas into polished products</p>
+      </div>
+
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-number">1</div>
+          <div class="timeline-content glass-strong">
+            <h3>Ideation &amp; Research</h3>
+            <p>
+              Understanding the problem, researching solutions, and defining project scope.
+              I analyze user needs, study competitors, and create a clear roadmap for development.
+            </p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-number">2</div>
+          <div class="timeline-content glass-strong">
+            <h3>Design &amp; Prototyping</h3>
+            <p>
+              Creating wireframes and high-fidelity designs. I focus on user experience,
+              visual hierarchy, and ensuring the design is both beautiful and functional.
+            </p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-number">3</div>
+          <div class="timeline-content glass-strong">
+            <h3>Development</h3>
+            <p>
+              Writing clean, maintainable code with best practices. I build responsive interfaces,
+              integrate APIs, and ensure the application is performant and scalable.
+            </p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-number">4</div>
+          <div class="timeline-content glass-strong">
+            <h3>Testing &amp; Deployment</h3>
+            <p>
+              Rigorous testing across devices and browsers, optimizing performance, and deploying to production.
+              I ensure everything works flawlessly before launch.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact reveal" id="contact">
+    <div class="container">
+      <div class="contact-container">
+        <div class="section-header">
+          <h2>Let's <span class="gradient-text">Connect</span></h2>
+          <p>Have a project in mind? Let's work together</p>
+        </div>
+
+        <form class="contact-form" id="contact-form">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              required
+              placeholder="Your name"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              required
+              placeholder="your.email@example.com"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea
+              id="message"
+              name="message"
+              required
+              placeholder="Tell me about your project..."
+            ></textarea>
+          </div>
+
+          <button type="submit" class="btn-primary">
+            Send Message <span>→</span>
+          </button>
+        </form>
+
+        <div class="social-links">
+          <a href="https://github.com/lucky-03Sharma" target="_blank" class="social-icon glass">GitHub</a>
+          <a href="https://www.linkedin.com/in/lucky-sharma-532165351/" target="_blank" class="social-icon glass">LinkedIn</a>
+          <a href="mailto:luckykunjbiharisharma@gmail.com" class="social-icon glass">Email</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
