@@ -5,6 +5,7 @@
   --muted: #b5bdcf;
   --line: #242833;
   --accent: #7f8cff;
+  --mono: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
 }
 
 * {
@@ -65,6 +66,8 @@ a {
 .nav-links a {
   text-decoration: none;
   color: var(--muted);
+  font-family: var(--mono);
+  font-size: 0.92rem;
 }
 
 .nav-links a:hover {
@@ -86,11 +89,44 @@ a {
   background: #121622;
   border-radius: 999px;
   padding: 0.35rem 0.8rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.dot {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: #5df08a;
+  box-shadow: 0 0 12px #5df08a;
+  animation: pulse 1.4s ease-in-out infinite;
 }
 
 h1 {
   font-size: clamp(2rem, 6vw, 4rem);
   line-height: 1.1;
+  letter-spacing: -0.03em;
+}
+
+.terminal-box {
+  width: fit-content;
+  max-width: 100%;
+  border: 1px solid var(--line);
+  background: #0d1015;
+  border-radius: 10px;
+  padding: 0.7rem 0.9rem;
+  font-family: var(--mono);
+  color: #cad3eb;
+}
+
+.terminal-box .prompt {
+  color: #7ce7a2;
+  margin-right: 0.4rem;
+}
+
+.terminal-box .accent {
+  color: #e8ecff;
 }
 
 .hero-copy {
@@ -155,6 +191,12 @@ h2 {
   border: 1px solid var(--line);
   border-radius: 14px;
   padding: 1rem;
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  border-color: #3a4159;
 }
 
 .card h3 {
@@ -195,6 +237,18 @@ h2 {
 .reveal.active {
   opacity: 1;
   transform: translateY(0);
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    transform: scale(1);
+    opacity: 0.85;
+  }
+  50% {
+    transform: scale(1.15);
+    opacity: 1;
+  }
 }
 
 @media (max-width: 640px) {
