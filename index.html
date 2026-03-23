@@ -7,43 +7,73 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header class="topbar">
-    <nav class="nav container">
-      <a class="brand" href="#home">Lucky</a>
-      <div class="nav-links">
-        <a href="#home">Terminal</a>
+  <main>
+    <section class="hero-shell" id="home">
+      <div class="hero-noise"></div>
+      <nav class="floating-nav">
+        <a href="#home" class="active">Terminal</a>
         <a href="#about">About</a>
         <a href="#achievements">Achievements</a>
         <a href="#projects">Projects</a>
-      </div>
-    </nav>
-  </header>
+      </nav>
 
-  <main>
-    <section class="hero container" id="home">
-      <p class="badge"><span class="dot"></span> Hi, Lucky here.</p>
-      <h1>Hi, Lucky<br />here.</h1>
-      <p class="hero-copy">
-        I explore and build intelligent systems, fueled by curiosity and Gen-AI.
-        A Full Stack &amp; Gen-AI Developer passionate about turning ideas into practical products.
-      </p>
-      <div class="cta">
-        <a class="btn btn-primary" href="#projects">View Work</a>
-        <a class="btn btn-secondary" href="#contact">Contact Me</a>
+      <div class="hero container">
+        <div class="hero-text">
+          <p class="status-badge"><span class="dot"></span> HELLO</p>
+          <h1>Hi, Lucky<br />here.</h1>
+          <p class="hero-copy">
+            I explore and build intelligent systems, fueled by curiosity and Gen-AI.
+            A <strong>Full Stack &amp; Gen-AI Developer</strong> passionate about turning ideas into practical products.
+          </p>
+          <div class="cta">
+            <a class="btn btn-primary" href="#projects">View Work <span aria-hidden="true">→</span></a>
+            <a class="btn btn-secondary" href="#contact">Contact Me</a>
+          </div>
+        </div>
+
+        <div class="hero-photo-wrap">
+          <img src="public/profile.jpg" alt="Lucky Sharma" class="hero-photo" />
+        </div>
       </div>
     </section>
 
     <section class="section container reveal" id="about">
-      <h2>About</h2>
-      <p>
-        I am a Computer Engineering student and builder focused on web apps, AI-enabled tooling,
-        and real-world problem solving. I enjoy turning complex ideas into usable software with
-        clean design and practical execution.
-      </p>
+      <h2><span class="section-index">02.</span> ABOUT ME</h2>
+      <div class="split-panel">
+        <article class="panel-card">
+          <h3 class="panel-title">Biography</h3>
+          <p>
+            I build practical software products with strong focus on user experience, clean development
+            flow, and performance. I enjoy solving real problems with a mix of full-stack engineering and AI.
+          </p>
+          <p>
+            My learning path is hands-on: internships, courses, and real project implementation. I actively
+            experiment with modern tools and ship ideas from concept to working demo.
+          </p>
+        </article>
+
+        <article class="panel-card">
+          <h3 class="panel-title">Education</h3>
+          <ul class="timeline-list">
+            <li>
+              <strong>Rizvi College of Engineering</strong>
+              <span>B.E (CSE) | 2023 - 2027 | CGPA: 9.42</span>
+            </li>
+            <li>
+              <strong>Mithibai College</strong>
+              <span>XII | 2023 | 77.70%</span>
+            </li>
+            <li>
+              <strong>U.S English Academy</strong>
+              <span>X | 2021 | 93%</span>
+            </li>
+          </ul>
+        </article>
+      </div>
     </section>
 
     <section class="section container reveal" id="achievements">
-      <h2>Achievements</h2>
+      <h2><span class="section-index">03.</span> ACHIEVEMENTS</h2>
       <div class="card-grid">
         <article class="card">
           <h3>Navbharat Times Scholarship</h3>
@@ -57,23 +87,37 @@
             Awarded scholarship support for academic excellence and personal growth.
           </p>
         </article>
+        <article class="card">
+          <h3>Internship - Cyberen Technologies</h3>
+          <p>
+            Worked as an intern in the R&amp;D team, exploring cost-effective analysis tools.
+          </p>
+        </article>
       </div>
     </section>
 
     <section class="section container reveal" id="projects">
-      <h2>Projects</h2>
+      <h2><span class="section-index">04.</span> PROJECTS</h2>
       <div class="card-grid">
         <article class="card">
-          <h3>QuizBurst</h3>
-          <p>Online quiz platform with certificates, admin panel, and user-friendly flow.</p>
-        </article>
-        <article class="card">
           <h3>Airbnb Clone</h3>
-          <p>Property listing and booking style app with responsive frontend and backend APIs.</p>
+          <p>
+            Built a full-stack Airbnb-style platform with authentication, property listings, booking flow,
+            REST APIs, and CRUD operations.
+          </p>
         </article>
         <article class="card">
-          <h3>AI Utilities</h3>
-          <p>Experimental tools using prompt workflows and automation-first thinking.</p>
+          <h3>RFID Attendance Module</h3>
+          <p>
+            Academic project where students tap RFID cards for attendance; captures login and logout
+            timestamps for monitoring.
+          </p>
+        </article>
+        <article class="card">
+          <h3>QuizBurst</h3>
+          <p>
+            Online quiz application with user-friendly quiz flow and certification support.
+          </p>
         </article>
       </div>
     </section>

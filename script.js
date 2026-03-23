@@ -22,7 +22,7 @@
 })();
 
 (function () {
-  const navLinks = document.querySelectorAll('.nav-links a');
+  const navLinks = document.querySelectorAll('.floating-nav a');
   if (!navLinks.length || !('IntersectionObserver' in window)) return;
 
   const sections = [...navLinks]
@@ -35,7 +35,8 @@
         if (!entry.isIntersecting) return;
         const id = `#${entry.target.id}`;
         navLinks.forEach((link) => {
-          link.style.color = link.getAttribute('href') === id ? '#f4f6fb' : '#b5bdcf';
+          const isActive = link.getAttribute('href') === id;
+          link.classList.toggle('active', isActive);
         });
       });
     },
